@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower&display=swap');
+
+// Vars
+
+$space: 2rem;
+$space-small: 1rem;
+$font-size-bigger: 1.125rem;
+$font-size-big: 3rem;
+$whitish: hsl(0, 0%, 71%);
+$dark-grey: hsl(0, 0%, 21%);
+
+// Helpers
+
+.mr-1 {
+    margin-right: $space/2;
+}
+
+.ml-1 {
+    margin-left: $space/2;
+}
+
+.mt-1 {
+    margin-top: $space/2;
+}
+
+.mt-2 {
+    margin-top: $space;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.inner-space {
+    padding: $space;
+}
+
+.is-fullheight {
+    height: 100vh;
+}
+
+.is-flex {
+    display: flex;
+}
+
+.is-page-container {
+    width: 100%;
+}
+
+//////////////////////
+
+* {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.title--huge {
+    font-size: 2.5rem !important;
+}
+
+.welcome-content {
+    max-width: 50%;
+    margin: 0 auto;
+    justify-self: center;
+    align-self: center;
+}
+
+aside {
+    padding: $space;
+    width: 100%;
+
+    .menu-label {
+        cursor: pointer;
+    }
+
+    .menu-list li a:hover {
+        color: black !important;
+    }
+}
+
+.btn-link {
+    background: none; 
+    border: none; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    color: #3692D2;
+}
+
+.btn-link:hover {
+    color: black !important;
+}
+
+.no-results-container {
+    width: 100%; 
+    height: 100%;
+    text-align: center;
+}
+
+.flex-column {
+    display: flex; 
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: $space;
+    background-image: url('../images/cork-background.jpg');
+    border: $space solid transparent;
+    border-image: url('https://4.imimg.com/data4/IR/IJ/MY-3890861/pine-wood-500x500.jpg') 5% round;
+}
+
+.sticky-note {   
+    background-image: url(../images/sticky-note.png);
+    background-size: cover;
+    height: 20rem;
+}
+
+.sticky-note-content {
+    font-family: "Indie Flower", cursive !important;
+    font-size: $font-size-bigger !important;
+    padding: 5rem 1.5rem;
+}
+
+.calendar-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.calendar-grid-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
+    button {
+        padding: $space-small;
+        border: none;
+    }
+
+    button:hover {
+        background: $dark-grey !important;
+        cursor: pointer;
+    }
+
+    .month {
+        grid-column-start: 2;
+        grid-column-end: 7;
+        padding: $space-small;
+        font-size: $font-size-big;
+        text-align: center;
+    }
+}
+
+.calendar-grid-days {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    font-size: $font-size-big/2;
+    text-align: center;
+}
+
+.calendar-grid-content {
+    height: 100%;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+
+    a:hover {
+        border: 1px solid $whitish;
+    }
+}
+
+.calendar-grid-item {
+    font-size: $font-size-big;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accordion {
+    padding-bottom: $space;
+
+    .accordion-header {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: $space/2;
+        border-bottom: 1px solid $whitish;
+    }
+}
+
+.accordion-item {
+    border-bottom: 1px solid $whitish;
+}
+
+.accordion-item-header {
+    padding: $space/2 $space;
+    
+    .accordion-title {
+        font-size: $font-size-bigger;
+
+        a:hover, button:hover {
+            color: $whitish !important;
+        }
+    }
+
+    .accordion-collapse {
+        cursor: pointer;
+        padding: $space/10 0;
+        width: $space;
+        border-radius: 50%;
+        text-align: center;
+    }
+
+    .accordion-collapse:hover {
+        background: black !important;
+    }
+}
+
+.accordion-item-content {
+    display: none;
+    padding: $space;
+    border-right: 1px solid $dark-grey;
+    border-left: 1px solid $dark-grey;
+}
+
+.accordion-bottom {
+    height: $space/2;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.card--login {
+    width: 30%;
+    border-radius: 6px;
+    margin: auto;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+}
+
+.back-control {
+    width: 30%;
+    font-size: 0.85rem;
+    margin: $space/4 auto;
+}
+
+.label--light {
+    color: $whitish !important;
+}
+
+.card-header-title--center {
+    justify-content: center !important;
+}
+
+.flash-message {
+    position: fixed; 
+    top: 80%; 
+    left: 100%;
+    padding: $space/2;
+    animation: show-message 4s;
+    width: 15rem;
+}
+
+@keyframes show-message {
+    0% { opacity: 0; }
+    18% { opacity: 1; left: 77%; }
+    25% { opacity: 1; left: 80%; }
+    75% { opacity: 1; left: 80%; }
+    82% { opacity: 1; left: 77%; }
+    100% { opacity: 0; left: 100%; }
+}

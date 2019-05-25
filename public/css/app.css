@@ -1,0 +1,312 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower&display=swap);.mr-1 {
+  margin-right: 1rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.inner-space {
+  padding: 2rem;
+}
+
+.is-fullheight {
+  height: 100vh;
+}
+
+.is-flex {
+  display: flex;
+}
+
+.is-page-container {
+  width: 100%;
+}
+
+* {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.title--huge {
+  font-size: 2.5rem !important;
+}
+
+.welcome-content {
+  max-width: 50%;
+  margin: 0 auto;
+  justify-self: center;
+  align-self: center;
+}
+
+aside {
+  padding: 2rem;
+  width: 100%;
+}
+
+aside .menu-label {
+  cursor: pointer;
+}
+
+aside .menu-list li a:hover {
+  color: black !important;
+}
+
+.btn-link {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #3692D2;
+}
+
+.btn-link:hover {
+  color: black !important;
+}
+
+.no-results-container {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  background-image: url(/images/cork-background.jpg?737cee62cb9b771e26ac20939edcb14b);
+  border: 2rem solid transparent;
+  -o-border-image: url("https://4.imimg.com/data4/IR/IJ/MY-3890861/pine-wood-500x500.jpg") 5% round;
+     border-image: url("https://4.imimg.com/data4/IR/IJ/MY-3890861/pine-wood-500x500.jpg") 5% round;
+}
+
+.sticky-note {
+  background-image: url(/images/sticky-note.png?c3c241494d65016d1abdd577ec979fe5);
+  background-size: cover;
+  height: 20rem;
+}
+
+.sticky-note-content {
+  font-family: "Indie Flower", cursive !important;
+  font-size: 1.125rem !important;
+  padding: 5rem 1.5rem;
+}
+
+.calendar-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-grid-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.calendar-grid-header button {
+  padding: 1rem;
+  border: none;
+}
+
+.calendar-grid-header button:hover {
+  background: #363636 !important;
+  cursor: pointer;
+}
+
+.calendar-grid-header .month {
+  grid-column-start: 2;
+  grid-column-end: 7;
+  padding: 1rem;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.calendar-grid-days {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.calendar-grid-content {
+  height: 100%;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.calendar-grid-content a:hover {
+  border: 1px solid #b5b5b5;
+}
+
+.calendar-grid-item {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.accordion {
+  padding-bottom: 2rem;
+}
+
+.accordion .accordion-header {
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 1px solid #b5b5b5;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #b5b5b5;
+}
+
+.accordion-item-header {
+  padding: 1rem 2rem;
+}
+
+.accordion-item-header .accordion-title {
+  font-size: 1.125rem;
+}
+
+.accordion-item-header .accordion-title a:hover,
+.accordion-item-header .accordion-title button:hover {
+  color: #b5b5b5 !important;
+}
+
+.accordion-item-header .accordion-collapse {
+  cursor: pointer;
+  padding: 0.2rem 0;
+  width: 2rem;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.accordion-item-header .accordion-collapse:hover {
+  background: black !important;
+}
+
+.accordion-item-content {
+  display: none;
+  padding: 2rem;
+  border-right: 1px solid #363636;
+  border-left: 1px solid #363636;
+}
+
+.accordion-bottom {
+  height: 1rem;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.card--login {
+  width: 30%;
+  border-radius: 6px;
+  margin: auto;
+  box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.back-control {
+  width: 30%;
+  font-size: 0.85rem;
+  margin: 0.5rem auto;
+}
+
+.label--light {
+  color: #b5b5b5 !important;
+}
+
+.card-header-title--center {
+  justify-content: center !important;
+}
+
+.flash-message {
+  position: fixed;
+  top: 80%;
+  left: 100%;
+  padding: 1rem;
+  -webkit-animation: show-message 4s;
+          animation: show-message 4s;
+  width: 15rem;
+}
+
+@-webkit-keyframes show-message {
+  0% {
+    opacity: 0;
+  }
+
+  18% {
+    opacity: 1;
+    left: 77%;
+  }
+
+  25% {
+    opacity: 1;
+    left: 80%;
+  }
+
+  75% {
+    opacity: 1;
+    left: 80%;
+  }
+
+  82% {
+    opacity: 1;
+    left: 77%;
+  }
+
+  100% {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+@keyframes show-message {
+  0% {
+    opacity: 0;
+  }
+
+  18% {
+    opacity: 1;
+    left: 77%;
+  }
+
+  25% {
+    opacity: 1;
+    left: 80%;
+  }
+
+  75% {
+    opacity: 1;
+    left: 80%;
+  }
+
+  82% {
+    opacity: 1;
+    left: 77%;
+  }
+
+  100% {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
